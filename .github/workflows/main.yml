@@ -1,13 +1,14 @@
-NAME: first workflow
+name: first workflow
 
-on :
+on:
   push:
     branches:
-      -main
-jobs :
+      - main
+
+jobs:
   example-job:
-    runs-on:ubuntu-latest
+    runs-on: ubuntu-latest
 
     steps:
-      -name: a welcome masseage 
-      run ; echo "welcome to my first project"
+      - name: A welcome message
+        run: echo "Welcome to my first project!"
